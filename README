@@ -1,0 +1,32 @@
+The script to visualize and do analysis of 3D data from koral
+simext3d.py made by D.Abarca and improved by D. Lancova and corrections by F.Kayanikhoo for neutron star case
+slice_with_vectors_fast.py and myinterpole.py made by D. Gronkiewicz 
+
+To run you can use --help
+/home/fatima/Documents/3dtest/slice_with_vectors_fast.py:132: SyntaxWarning: invalid escape sequence '\,'
+  xlabel = f"${slice_name[0].lower()}\,[GM/c^2]$"
+/home/fatima/Documents/3dtest/slice_with_vectors_fast.py:133: SyntaxWarning: invalid escape sequence '\,'
+  ylabel = f"${slice_name[1].lower()}\,[GM/c^2]$"
+usage: slice_with_vectors_fast.py [-h] [--resolution RESOLUTION] [--span SPAN]
+                                  [--scalar SCALAR [SCALAR ...]]
+                                  [--vector VECTOR [VECTOR ...]]
+                                  [--slice SLICE [SLICE ...]]
+                                  d
+
+3D slice visualization
+
+positional arguments:
+  d                     Input data file
+
+options:
+  -h, --help            show this help message and exit
+  --resolution RESOLUTION
+                        Grid resolution (default: 512)
+  --span SPAN           Grid span (default: 500)
+  --scalar SCALAR [SCALAR ...]
+                        Scalar field name(s) (default: rho)
+  --vector VECTOR [VECTOR ...]
+                        Vector field name(s) (default: bcon)
+  --slice SLICE [SLICE ...]
+                        Slice plane(s): two letters from X,Y,Z optionally followed by
+                        offset (default: XZ)
